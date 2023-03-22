@@ -1,8 +1,8 @@
 import axios from 'axios';
-
+import { URL } from './constante';
 export const products = async (state) => {
-    const peticion = await axios.get('https://dummyjson.com/products')
-    let pro = peticion.data.products;
+    const peticion = await axios.get(URL+'products')
+     let pro = peticion.data.products;
     let proArr = [];
     let arrayRandow = [];
 
@@ -17,6 +17,12 @@ export const products = async (state) => {
         }
     };    
     state(arrayRandow)
+}
+
+export const unicoProduct = async (id,state) =>{
+    const peticion = await axios.get(URL+'products/' + id)
+    state(peticion.data)
+
 }
 
 

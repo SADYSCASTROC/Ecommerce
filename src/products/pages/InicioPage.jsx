@@ -3,17 +3,15 @@ import './inicio.css'
 
 export const InicioPage = () => {
   return (
-    <>
-<div className='contenedor'>
- 
-</div>
-<div className="row m-5 inicio  " style={{ marginTop: 50 }}>
+    <div style={{marginTop:100}}>
+
+<div className="row m-5 inicio  " >
 
 <CardPro/>
 
 </div>
 
-    </>
+    </div>
     
   
 

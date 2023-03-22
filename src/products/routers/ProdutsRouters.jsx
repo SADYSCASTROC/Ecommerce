@@ -8,11 +8,9 @@ export const ProdutsRouters = () => {
         <Navbar/>
         <Routes>
                 <Route path="inicio" element={<InicioPage />} />
-                <Route path="categorias" element={<Categors />} />
-
+                <Route path="ProductoInfo/:id" element={<ProductoInfoPage />} />
+                <Route path="categorias/:nameCategory" element={<Categors />} />
                 <Route path="buscar" element={<SearchPage />} />
-                <Route path="ProductoInfo" element={<ProductoInfoPage />} />
-
                 <Route path="/" element={<Navigate to="/inicio"/>} />
             </Routes>
     </>

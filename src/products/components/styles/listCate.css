@@ -1,0 +1,12 @@
+.cardca{
+    color: rgb(56, 56, 56);
+}
+.cardca:hover{
+    background-color: #eef06e;;
+}
+
+.links{
+    color: rgb(127, 126, 126);
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
