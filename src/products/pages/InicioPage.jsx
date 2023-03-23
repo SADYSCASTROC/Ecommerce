@@ -1,4 +1,4 @@
-import { CardPro } from '../components'
+import { CardPro,Footer } from '../components'
 import './inicio.css'
 
 export const InicioPage = () => {
@@ -9,7 +9,9 @@ export const InicioPage = () => {
 
 <CardPro/>
 
+
 </div>
+<Footer/>
 
     </div>
     

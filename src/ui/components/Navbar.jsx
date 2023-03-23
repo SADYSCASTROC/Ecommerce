@@ -17,10 +17,10 @@ export const Navbar = () => {
 
     return (
 
-        <Nav className="navbar navbar-expand-sm  p-3 navbar navUi">
+        <Nav className="navbar navbar-expand-sm  p-3 navbar navUi ">
 
             <Link
-                className="navbar-brand w-30"
+                className="navbar-brand p-2  "
                 to="/"
             >
                 <Logo/>
@@ -31,7 +31,6 @@ export const Navbar = () => {
 
                     <NavLink
                         className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
-                        // to="/categorias"
                     >
                         <ButonCategory/>
                     </NavLink>

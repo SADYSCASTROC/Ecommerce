@@ -39,9 +39,9 @@ export const CardPro = () => {
                 </p>
                 <h6 className="card-title">{desc.title}</h6>
                 {/* <p className="ahoraANtes"> {desc.stock} unidad</p> */}
-                <del className="descrition antes"> Antes € { (desc.price/( (100-desc.discountPercentage))*100).toFixed(1)}</del>
+                <del className="descrition antes"> Antes{ (desc.price/( (100-desc.discountPercentage))*100).toFixed(1)} € </del>
 
-                <p className="ahoraANtes">Ahora € {desc.price}  <br />
+                <p className="ahoraANtes">Ahora  {desc.price} € <br />
                  stock: {desc.stock} </p> 
                 <div className="HoverAddCar">
                   <ButonAgregar />

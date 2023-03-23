@@ -6,13 +6,14 @@
 }
 .cardP{
     height: 100%;
+    border: 1px solid #eef06e;
 }
 
 .center_category{
     background-color: #eef06e;
     text-align: center; 
     height: 50px; 
-    margin-top: 30px;
+    margin-top: 90px;
     color: gray;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
