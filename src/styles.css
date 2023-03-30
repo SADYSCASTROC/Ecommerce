@@ -1,0 +1,394 @@
+/* estilos header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    height: auto;
+    background-color: rgb(216, 60, 247);
+    box-shadow: rgba(140, 30, 162, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    justify-content: space-between;
+}
+
+.logoHeader {
+    height: 80px;
+}
+
+.logo {
+    width: 50%;
+}
+
+.butonHamburgesaCategorias {
+    border: none;
+    transition: .3s ease all;
+    color: #f2f2f2;
+    display: flex;
+    background-color: rgb(216, 60, 247);
+}
+
+.menuImg {
+    height: 35px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.linksButonInico {
+    display: flex;
+    margin-left: -45px;
+    align-items: center;
+    width: 25%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.linkInicio {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: none;
+}
+
+.containerBuscador {
+    width: 50%;
+    position: relative;
+    top: 22px;
+    left: -35px;
+}
+
+.buscador {
+    border: 1px solid rgb(167, 166, 165);
+    border-radius: 15px;
+    text-align: center;
+    color: #bbbbbb;
+}
+
+.navCarrito {
+    margin-bottom: 25px;
+}
+
+.imgCarrito {
+    width: 70%;
+}
+
+/*estilos de productos pagina principal */
+
+.containerProductosMain {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    justify-content: space-evenly;
+    padding: 10px;
+    height: auto;
+}
+
+.cardProdustosMain {
+    width: 100%;
+    border: 2px solid rgb(200, 202, 200);
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+    height: auto;
+    top: 30px;
+}
+
+.cardProdustosMain:hover {
+    background-color: rgb(237, 245, 247);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.imgProducdiv {
+    width: 100%;
+    height: 290px;
+}
+
+.ImagesProducts {
+    width: 100%;
+    height: 290px;
+    border-radius: 15px 15px 0 0;
+}
+
+.descuento {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    bottom: 0;
+    top: 0;
+    font-size: 20px;
+    color: rgb(237, 237, 237);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #c612b7a7;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.descu {
+    font-size: 15px;
+}
+
+.descrition {
+    color: rgb(157, 19, 63);
+}
+
+.contCarrito {
+    background-color: rgb(196, 146, 246);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 5px;
+}
+
+.carritoButonAgregar {
+    width: 25px;
+    margin-left: 10px
+}
+
+.contCarrito:hover {
+    background-color: rgb(190, 152, 228);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* 
+estilos del footer */
+.footer {
+    border-top: 2px solid rgb(185, 184, 184);
+    background-color: #e2e1e1;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    height: 150px;
+    align-items: center;
+}
+
+.containerImgRedesSociales {
+    width: 50%;
+    text-align: center;
+}
+
+
+/* categorias */
+
+.containerProductsCategory {
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+    ;
+}
+
+.center_category {
+    background-color: #e5ff7b;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 85px;
+}
+
+/* lista Categorya */
+.containerCategoryLinks {
+    height: 80%;
+    overflow-y: auto;
+}
+
+.cardca {
+    font-size: 20px;
+}
+
+.linksCategory {
+    text-decoration: none;
+    color: rgb(84, 84, 84);
+}
+
+/* descripcion del producto */
+
+.containerproducts {
+    margin-top: 100px;
+
+}
+
+.cardproducts {
+    border: solid 2px rgb(189, 189, 189);
+    border-radius: 15px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.imgDescripcion {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+
+.descuentoDescription {
+    font-weight: bold;
+}
+
+
+
+/* tablet */
+@media (min-width: 768px) {
+    /* header */
+
+
+    .logo {
+        width: 65%;
+    }
+
+    .menuImg {
+        height: 47px;
+        margin-bottom: -2px;
+    }
+
+    .containerBuscador {
+        width: 50%;
+        position: initial;
+        margin-right: 30px;
+    }
+
+    .buscador {
+        width: 80%;
+        height: 35px;
+    }
+
+    .navCarrito {
+        margin-bottom: 10px;
+    }
+
+    /* pagina Principal */
+
+    .cardProdustosMain {
+        width: 40%;
+        margin: 5px;
+    }
+
+    .imgProducdiv {
+        width: 100%;
+        height: 290px;
+    }
+
+    .contCarrito {
+        font-size: 23px;
+    }
+
+    .carritoButonAgregar {
+        width: 33px;
+    }
+
+    /* discripcio producto */
+    .cardproducts {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .imgDescripcion {
+        width: 100%;
+        height: 350px;
+        border-radius: 15px 15px 0 0;
+    }
+}
+
+/* escritorio normales */
+@media (min-width: 992px) {
+    /* heade */
+
+    .linksButonInico {
+        width: 10%;
+        margin-right: 300px;
+    }
+
+    .linkInicio {
+        font-size: 17px;
+        display: block;
+    }
+
+    .containerBuscador {
+        width: 30%;
+        position: initial;
+        margin-right: 350px;
+    }
+
+    .navCarrito {
+        margin-bottom: 0px;
+    }
+
+
+
+    /*estilos de productos pagina principal */
+
+
+    .cardProdustosMain {
+        width: 23%;
+    }
+
+
+
+    .imgProducdiv {
+        width: 100%;
+        height: 275px;
+    }
+
+    .ImagesProducts {
+        width: 100%;
+        height: 265px;
+    }
+
+    .descu {
+        font-size: 15px;
+    }
+
+
+    .contCarrito {
+        font-size: 23px;
+        display: none;
+    }
+
+    .carritoButonAgregar {
+        width: 25px;
+        margin-left: 10px;
+    }
+
+
+    .cardProdustosMain:hover .contCarrito {
+        display: block;
+    }
+
+
+    /* discripcio producto */
+    .cardproducts {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .imgDescripcion {
+        width: 100%;
+        height: 350px;
+        border-radius: 15px 15px 0 0;
+    }
+
+
+    /* discripcio producto */
+    .cardproducts {
+        width: 50%;
+        margin-left: 25%;
+        display: flex;
+    }
+
+    .imgDescripcion {
+        width: 50%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .cardproducts:hover .contCarrito {
+        display: block;
+    }
+
+}

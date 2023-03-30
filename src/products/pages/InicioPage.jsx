@@ -1,21 +1,14 @@
-import { CardPro,Footer } from '../components'
-import './inicio.css'
+import { CardPro } from '../components'
 
 export const InicioPage = () => {
   return (
-    <div style={{marginTop:100}}>
+    <main className='mainInicio'>
 
-<div className="row m-5 inicio  " >
+      <CardPro />
 
-<CardPro/>
+    </main>
 
 
-</div>
-<Footer/>
-
-    </div>
-    
-  
 
   )
 }

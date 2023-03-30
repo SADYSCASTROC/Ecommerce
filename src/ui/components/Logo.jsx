@@ -10,7 +10,8 @@ export const Logo = () => {
 }
 
 const ContenedorLogo = styled.div`
-height: 30px;
+height: auto;
 width: 100px;
+margin-top:5px;
 
 `

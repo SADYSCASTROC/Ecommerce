@@ -1,9 +1,7 @@
 import { useState } from "react"
-import styled from "styled-components"
 import { ModalCategory } from "../../products/components/ModalCategory"
 import { ListCate } from "../../products/components/ListCate"
 import menu from '../../assets/menuh.png'
-import '../components/style/navbar.css'
 
 export const ButonCategory = () => {
 
@@ -11,7 +9,7 @@ export const ButonCategory = () => {
 
     return (
         <div>
-            <button onClick={()=> setEstadoModal(!estadoModal )} className="buton">
+            <button onClick={()=> setEstadoModal(!estadoModal )} className="butonHamburgesaCategorias">
                 <img src={menu} alt=""className="menuImg" />
             </button>
 

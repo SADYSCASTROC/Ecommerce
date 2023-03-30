@@ -1,8 +1,7 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
 import { ButonCategory } from './ButonCategory';
 import { Logo } from './Logo';
-import './style/navbar.css'
+import carritoImg from '../../assets/carrito.png';
 
 
 export const Navbar = () => {
@@ -16,48 +15,44 @@ export const Navbar = () => {
     }
 
     return (
-
-        <Nav className="navbar navbar-expand-sm  p-3 navbar navUi ">
+        <header>
 
             <Link
-                className="navbar-brand p-2  "
+                className="logoHeader"
                 to="/"
             >
-                <Logo/>
+                <Logo />
             </Link>
 
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
+            <div className="linksButonInico">
 
-                    <NavLink
-                        className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
-                    >
-                        <ButonCategory/>
-                    </NavLink>
+                <NavLink
+                    className=""
+                >
+                    <ButonCategory />
+                </NavLink>
 
-                    <NavLink
-                        className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
-                        to="/inicio"
-                    >
-                        Inicio
-                    </NavLink>
+                <NavLink className="linkInicio"
+                    to="/inicio"
+                >
+                    Inicio
+                </NavLink>
+            </div>
+
+            <div className="containerBuscador">
+                <input type="text" placeholder='Buscar productos' name="" id=""  className='buscador'/>
+            </div>
+
+            <div className="navCarrito">
+                <div className=''
+                    onClick={onLogaut}
+                >
+                    <img src={carritoImg} alt="" className='imgCarrito' />
                 </div>
             </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
-                <ul className="navbar-nav ml-auto">
-                    <button className='nav-tem nav-link btn buton text-#808B96'
-                        onClick={onLogaut}
-                    >
-                        Logout
+        </header>
 
-                    </button>
-                </ul>
-            </div>
-        </Nav>
     )
 }
 
-const Nav = styled.nav`
-background-color:  #212F3D;
-`

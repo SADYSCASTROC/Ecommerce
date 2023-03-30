@@ -21,7 +21,9 @@ height: 100vh;
 position: fixed;
 top:78px;
 left:0;
-background: rgba(0,0,0,.5)
+background: rgba(0,0,0,.5);
+z-index: 1px;
+
 `;
 
 const ContenedorModal = styled.div`
@@ -33,7 +35,6 @@ Position: relative;
 padding: 15px;
 color:rgba(0,0,0,.5);
 margin-top: 0px;
-
 `;
 
 
