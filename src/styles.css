@@ -73,6 +73,12 @@ header {
 .imgCarrito {
     width: 70%;
 }
+.imgLogin{
+    width: 70%;
+}
+.navLogin {
+    margin-bottom: 25px;
+}
 
 /*estilos de productos pagina principal */
 
@@ -262,6 +268,15 @@ estilos del footer */
         margin-bottom: 10px;
     }
 
+    
+    .navLogin {
+        margin-bottom: 10px;
+        width: 80px;
+    }
+    .imgLogin{
+        width: 40px;
+    }
+
     /* pagina Principal */
 
     .cardProdustosMain {
@@ -317,6 +332,13 @@ estilos del footer */
 
     .navCarrito {
         margin-bottom: 0px;
+    }
+    .navLogin{
+        margin-bottom: 0px;
+    }
+
+    .imgLogin{
+        width: 40px;
     }
 
 

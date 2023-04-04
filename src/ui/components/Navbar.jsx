@@ -2,12 +2,17 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { ButonCategory } from './ButonCategory';
 import { Logo } from './Logo';
 import carritoImg from '../../assets/carrito.png';
-
+import login from '../../assets/loginI.png'
 
 export const Navbar = () => {
 
     const navigate = useNavigate();
 
+    const onCart = () => {
+        navigate('/carrito', {
+            replace: true
+        })
+    }
     const onLogaut = () => {
         navigate('/login', {
             replace: true
@@ -43,9 +48,17 @@ export const Navbar = () => {
                 <input type="text" placeholder='Buscar productos' name="" id=""  className='buscador'/>
             </div>
 
-            <div className="navCarrito">
+            <div className="navLogin">
                 <div className=''
                     onClick={onLogaut}
+                >
+                    <img src={login} alt="" className='imgLogin' />
+                </div>
+            </div>
+
+            <div className="navCarrito">
+                <div className=''
+                    onClick={onCart}
                 >
                     <img src={carritoImg} alt="" className='imgCarrito' />
                 </div>

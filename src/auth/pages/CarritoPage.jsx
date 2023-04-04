@@ -1,25 +1,25 @@
 import { useNavigate } from "react-router-dom"
 
 
-export const LoginPage = () => {
+export const CarritoPage = () => {
   const navigate = useNavigate();
 
-  const onLogin = () =>{
-    navigate('/',{
+  const onCart = () =>{
+    navigate('/inicio',{
       replace: true
     })
   }
 
   return (
     <>
-    Login
+    Productos agregados 
 
     <hr />
 
     <button className="btn btn-primary"
-    onClick={onLogin}
+    onClick={onCart}
     >
-
+      Seguir comprando
     </button>
 
     </>
