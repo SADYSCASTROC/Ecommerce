@@ -5,7 +5,6 @@ export const InicioPage = () => {
     <main className='mainInicio'>
 
       <CardPro />
-
     </main>
 
 

@@ -53,10 +53,14 @@ header {
 }
 
 .containerBuscador {
-    width: 50%;
+    width: 55%;
     position: relative;
     top: 22px;
-    left: -35px;
+    left: 25px;
+}
+.buscadorImg{
+    width: 70%;
+    height: 40px;
 }
 
 .buscador {
@@ -81,6 +85,14 @@ header {
 }
 
 /*estilos de productos pagina principal */
+.searchProducts{
+    margin-top: 100px;
+
+}
+.conatainerProductsBuscados{
+    height: 500px;
+    overflow-y: scroll;
+}
 
 .containerProductosMain {
     display: flex;
