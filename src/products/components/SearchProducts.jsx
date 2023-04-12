@@ -8,7 +8,6 @@ export const SearchProducts = () => {
     const [results, setResults] = useState([]);
 
 
-
     function handleKeyPress(event) {
         if (event.key === 'Enter') {
             fetch(URL + 'products/search?q=' + query)
@@ -19,11 +18,13 @@ export const SearchProducts = () => {
                 });
         }
     }
+    
 
     return (
 
         <div className="searchProducts">
-            <input
+          <div className="containerInputSearch">
+          <input
                 className='buscador'
                 type="text"
                 placeholder="Buscar productos"
@@ -33,7 +34,12 @@ export const SearchProducts = () => {
             />
             {/* <ListaSearch resultado={results} /> */}
 
-            <div className="containerProductosMain">
+          </div>
+
+          <div className="containerProductsMainSearc">
+
+
+          <div className="containerProductosMain">
 
 {
   results.map(desc => (
@@ -68,6 +74,9 @@ export const SearchProducts = () => {
 }
 
 </div>
+
+          </div>
+
         </div>
         // <input type="text" placeholder='Buscar productos' name="" id="" className='buscador' />
     )

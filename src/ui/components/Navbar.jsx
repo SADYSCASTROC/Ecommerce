@@ -3,7 +3,6 @@ import { ButonCategory } from './ButonCategory';
 import { Logo } from './Logo';
 import carritoImg from '../../assets/carrito.png';
 import login from '../../assets/loginI.png'
-import searc from '../../assets/tabler_input-search.png'
 export const Navbar = () => {
 
     const navigate = useNavigate();
@@ -45,12 +44,12 @@ export const Navbar = () => {
             </div>
 
             <div className="containerBuscador">
-            <NavLink className="buscarProducts"
+                <NavLink className="buscarProducts"
                     to="/buscarProducto"
                 >
-                    <img src={searc} alt="" className='buscadorImg' />
-                </NavLink>           
-                 </div>
+                    Buscar
+                </NavLink>
+            </div>
 
             <div className="navLogin">
                 <div className=''

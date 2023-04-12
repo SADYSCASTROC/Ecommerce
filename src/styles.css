@@ -57,10 +57,43 @@ header {
     position: relative;
     top: 22px;
     left: 25px;
+    
 }
-.buscadorImg{
-    width: 70%;
-    height: 40px;
+.containerInputSearch{
+    display: flex;
+    justify-content: center;
+}
+.carruselInicio{
+    margin-left: 20px;
+    width: 90%;
+    height: 200px;
+    margin-top: 110px;
+    display: flex;
+    padding: 5px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: proximity;
+}
+.carruselImgCont{
+    position: relative;
+    scroll-snap-align:center ;
+    width: 100%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 180px;
+    padding: 0 2px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.carruselImg{
+    width: 100%;
+    height: 100%;
+
+}
+.buscarProducts{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .buscador {
@@ -68,6 +101,11 @@ header {
     border-radius: 15px;
     text-align: center;
     color: #bbbbbb;
+}
+.containerProductsMainSearc{
+    height: 400px;
+    overflow-y:scroll;
+
 }
 
 .navCarrito {
@@ -97,7 +135,7 @@ header {
 .containerProductosMain {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     justify-content: space-evenly;
     padding: 10px;
     height: auto;
@@ -263,6 +301,7 @@ estilos del footer */
     .menuImg {
         height: 47px;
         margin-bottom: -2px;
+        margin-left: 30px;
     }
 
     .containerBuscador {
@@ -327,7 +366,7 @@ estilos del footer */
     /* heade */
 
     .linksButonInico {
-        width: 10%;
+        width: 13%;
         margin-right: 300px;
     }
 
@@ -335,9 +374,10 @@ estilos del footer */
         font-size: 17px;
         display: block;
     }
+ 
 
     .containerBuscador {
-        width: 30%;
+        width: 0%;
         position: initial;
         margin-right: 350px;
     }
@@ -351,6 +391,7 @@ estilos del footer */
 
     .imgLogin{
         width: 40px;
+        margin-left: 60px;
     }
 
 
